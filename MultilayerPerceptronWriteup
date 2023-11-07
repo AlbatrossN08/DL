@@ -1,0 +1,39 @@
+AIM: To implement Multilayer Perceptron algorithm to simulate XOR gate.
+Theory:
+Multilayer Perceptron:
+A Multilayer Perceptron (MLP) is a type of artificial neural network
+used in machine learning and deep learning. It is a feedforward neural 
+network with one or more layers of interconnected neurons, and it is one
+of the simplest and most widely used neural network architectures.
+MLP can be used to solve a variety of problems, including classification, 
+regression, and pattern recognition. One of the simplest problems that an MLP
+can solve is the XOR problem.
+XOR GATE:
+The XOR problem is a logical operation that takes two binary inputs and 
+produces a single binary output. The output is 1 if and only if the two 
+inputs are different.
+
+x1   x2  y
+0    0   0
+0    1   1
+1    0   1
+1    1   0
+
+Network Architecture:
+#Draw  Nerual Architecture
+ 
+Steps:
+1. Define input vector and output vector.
+2. Initialize Weight vector and bias vector to random value
+3. Choose activation functions.
+4. Forward Propagation
+5. Loss Calculation
+6. Back Propagation
+7. Training Loop. 
+
+
+
+
+
+
+
