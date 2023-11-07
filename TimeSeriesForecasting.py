@@ -10,6 +10,10 @@ from keras.models import Sequential
 from keras.utils import plot_model
 from keras.layers import LSTM, Dense,Activation,Dropout
 
+from google.colab import files
+uploaded = files.upload()
+
+
 filename='all_stocks_2006-01-01_to_2018-01-01.csv'
 data=pd.read_csv(filename)
 data.head()
