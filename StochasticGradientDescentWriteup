@@ -1,0 +1,35 @@
+Aim: - To apply Stochastic Gradient Descent optimization algorithm to learn the parameters
+of the network.
+Theory: -
+Optimization in deep learning refers to the process of finding the best set of model
+parameters that minimize a specific loss function.
+Stochastic Gradient Descent (SGD) is an optimization algorithm that is 
+used to train machine learning models. SGD works by iteratively updating
+the parameters of the model to minimize the loss function. On each iteration,
+SGD updates the parameters of the model in the direction of the negative gradient
+of the loss function. The gradient is a vector that points in the direction of the 
+steepest increase in the loss function. SGD is a stochastic algorithm, 
+which means that it updates the parameters of the model using a random 
+sample of the training data.
+
+ 
+Stochastic gradient descent (SGD) update at training iteration k:
+Require: Learning rate ɛk.
+Require: Initial parameter θ
+  while stopping criterion not met do
+	  Sample a minibatch of m examples from the training set {x(1)....x(m) }
+    With corresponding targets y(i).
+    Compute gradient estimate: ĝ← +1/m ∆θ ∑i L(f (x(1); θ ), y(i)).
+	  Apply update: θ←θ- ɛĝ
+  end while
+
+Steps:
+1.Import the necessary libraries such as numpy and panda
+2. Generate the random rate
+3. Create a Data frame of function
+4. Fit a linear regression model using sklearn
+5. Define function for prediction
+6. Define Function for calculation or errors
+7. Define function for computation of gradient
+8. Implement the stochastic gradient descent (SGD) algo
+9. Run SGD and plot the graph
