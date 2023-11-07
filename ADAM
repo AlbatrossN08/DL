@@ -1,0 +1,26 @@
+Aim: - To apply Adaptive Moment Estimation optimization algorithm to learn the parameters
+of the network.
+Theory:
+The Adam optimizer (short for Adaptive Moment Estimation) is a popular 
+and highly effective optimization algorithm used in deep learning and machine
+learning. It is an extension of the stochastic gradient descent (SGD) optimization 
+algorithm and is designed to address some of the issues associated with traditional
+gradient-based optimization methods. Adam combines ideas from both momentum and
+RMSProp (Root Mean Square Propagation) to provide adaptive learning rates and efficient
+optimization.
+equations applied during each iteration for Adam are:
+biased decaying momentum:   m←β1⋅m+(1−β1)⋅gradient
+biased decaying sq. gradient: v←β2⋅v+(1−β2)⋅(gradient2)
+corrected decaying momentum:  m^=m/(1- β1t)
+corrected decaying sq. gradient: v^= v /(1- β2t)
+next iterate: new_parameter= old_parameter−α⋅ m^/(sqrt(v^)+ɛ)
+
+Steps:
+1. Define the data and model.
+2. Define the prediction, error, and cost functions.
+3. Define the gradient function.
+4. Initialize the weights, first moment estimates (vw), and second moment estimates (sw).
+5. Set the hyperparameters beta1 and beta2.
+6. Iterate over the data and update the weights.
+7. Track the cost function.
+8. Plot the cost function. 
