@@ -1,0 +1,25 @@
+Aim: - To implement Autoencoder for Image 
+Denoising application using MNIST dataset.
+Thoery:
+A Denoising Autoencoder is a type of autoencoder 
+that is specifically trained to remove noise or 
+corruption from input data. It is a variant of the
+traditional autoencoder and is used for feature learning
+and data reconstruction tasks when the input data is noisy or contains errors.
+
+ 
+Steps:
+1. Import the necessary libraries and load the MNIST dataset
+2. Preprocess the dataset by reshaping the images into one
+dimensional array and normalizing the pixel values.
+3. Add noise to the training and test datasets.
+4. Define a sequential model with a series of dense layers
+5. Compile the model with mean squared error loss
+function and the adam optimizer.
+6. Train the model on the noisy training data 
+for a specified number of epochs.
+7. Use the trained model to predict the denoised
+versions of the noisy test images
+8. Compare the denoised images to the original
+test images to see how well the
+model was able to remove noise. 
