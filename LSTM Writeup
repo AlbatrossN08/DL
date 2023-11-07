@@ -2,38 +2,36 @@ Aim:- To design and implement Long Short-Term Memory (LSTM)
 model for Sequence prediction.
 
 Theory:
+Aim:- To design and implement Long Short-Term Memory (LSTM) model for Sequence prediction.
+
+Thoery:
+RNN:
+A Recurrent Neural Network (RNN) is a type of artificial neural network designed 
+for processing and modeling sequential data. Unlike feedforward neural networks, 
+which process data in a single pass, RNNs have loops and can maintain a hidden 
+state that captures information about previous time steps. This recurrent nature
+makes them well-suited for tasks involving time series, natural language processing,
+speech recognition, and more.
+Recurrent Neural Networks (RNNs) are commonly used for sequence prediction tasks, 
+where the goal is to generate an output sequence based on an input sequence.
+Sequence prediction tasks can be found in various domains, including natural 
+language processing, time series forecasting, speech recognition, and more.
 Long Short-Term Memory (LSTM) is a type of recurrent neural network (RNN) 
-architecture that is specifically designed to address the vanishing 
-gradient problem, which is a limitation of traditional RNNs. 
-LSTMs are capable of learning and remembering long-term dependencies 
-in sequential data and have found widespread use in applications
-involving time series data, natural language processing, speech recognition, and more.
-1.	Cell State (C_t): The cell state is the "memory" of the LSTM. 
-    It runs through the entire sequence of data, and information
-    can be added to or removed from it. The cell state is regulated 
-    by three gates: the input gate, the forget gate, and the output gate.
-2.	Hidden State (h_t): The hidden state is the output of the LSTM cell 
-    for a particular time step. It carries information that the cell has 
-    deemed relevant and is based on the cell state. It can also be used 
-    for predictions or further processing.
-3.	Input Gate: The input gate decides which information from the
-    current input and the previous hidden state should be added to 
-    the cell state. It does this by applying a sigmoid activation 
-    function to the input, which decides which values should be updated,
-    and a tanh activation function that creates a vector of new candidate values.
-4.	Forget Gate: The forget gate determines what information from the cell state 
-    should be discarded or forgotten. It looks at the previous hidden state 
-    and the current input and produces a forget gate value (between 0 and 1) 
-    for each element in the cell state. This gate helps prevent vanishing 
-    gradients by allowing the network to learn to keep important information 
-    and discard unimportant information.
-5.	Output Gate: The output gate decides what the next hidden state 
-    should be and what the output should be based on the current cell 
-    state. It allows the LSTM to control the information flow from the 
-    cell state to the hidden state. The output gate produces two vectors:
-     one for the new hidden state (h_t) and one for the final output.
-	Equation copy form:             
-	https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+architecture that is specifically designed to address the vanishing gradient 
+problem, which is a limitation of traditional RNNs. 
+Diagram of RNN Architecture: 
+https://www.researchgate.net/figure/The-architecture-of-RNN_fig3_312593525
+	
+Steps:
+Define numerical sequence ‘data’
+2. Use a function to split the sequence into input and output
+3. Prepare the input data for LSTM layer
+4. Create a sequential model with an LSTM layer and dense output
+5. Define the models optimizers loss function and metrics
+6. Train model on the data
+7. Use the trained model to predict the next number in a test sequence
+
+
 Steps:
 Define numerical sequence ‘data’
 2. Use a function to split the sequence into input and output
