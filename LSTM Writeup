@@ -1,7 +1,7 @@
 Aim:- To design and implement Long Short-Term Memory (LSTM) 
 model for Sequence prediction.
 
-Thoery:
+Theory:
 Long Short-Term Memory (LSTM) is a type of recurrent neural network (RNN) 
 architecture that is specifically designed to address the vanishing 
 gradient problem, which is a limitation of traditional RNNs. 
