@@ -1,0 +1,26 @@
+Aim: - To design and implement Convolutional Neural Network model for digit recognition
+Application using MNIST dataset..
+Theory:
+A Convolutional Neural Network (CNN) is a type of artificial neural network
+designed for processing and analyzing structured grid-like data,
+such as images and video. CNNs have revolutionized the field of computer vision
+and are widely used for tasks like image classification, object detection, 
+facial recognition, and more. They are particularly effective at capturing 
+local patterns and hierarchies of features within images.
+Layers:
+Input
+Convolution
+Activation function
+Pooling layer
+Fully Connected Layer
+Output layer
+ 
+Steps:
+1. Imports necessary libraries.
+2. Loads and preprocesses the MNIST dataset.
+3. Creates a Convolutional Neural Network (CNN) model.
+4. Compiles the model.
+5. Trains the model on the MNIST dataset.
+6. Makes predictions on the test dataset and visualizes some results.
+7. Evaluates the model's test loss and accuracy.
+
