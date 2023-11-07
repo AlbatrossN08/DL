@@ -1,0 +1,31 @@
+Aim: - To implement Autoencoder architecture using MNIST dataset for image compression.
+Theory:
+An autoencoder is a type of artificial neural network
+used in unsupervised machine learning, specifically for 
+dimensionality reduction, feature learning, and data compression.
+The primary purpose of an autoencoder is to learn a compact
+representation of the input data while attempting to reconstruct
+the input as accurately as possible. It does 
+this by using an encoder-decoder architecture.
+Encoder: The encoder network takes the input data
+and maps it to a lower-dimensional representation.
+Decoder: The decoder network takes the compressed representation
+from the bottleneck layer and attempts to reconstruct the original input data
+Types:
+Shallow Undercomplete
+Shallow Overcomplete
+Deep Undercomplete
+Deep  Overcomplete
+Steps:
+. Import libraries for operations , visualization and deep learning
+2. Define encode and decoder structure for autoencoder
+3. Combine both parts to form and autoencoder model
+4. Compile the autoencoder specifying loss and optimizer
+5. Load and preprocess the MNIST dataset
+6. Training the autoencoder on the dataset
+7. Generate encoded and decoded images
+8. Visualize original and reconstructed images using matplotlib
+
+
+
+
